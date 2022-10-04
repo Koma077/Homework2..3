@@ -37,6 +37,11 @@ public class Mammal extends Animal {
         System.out.println("Спит");
     }
 
+    @Override
+    void go() {
+        System.out.println("Идет");
+    }
+
     void walk() {
 
         System.out.println("Действие прогулки");
