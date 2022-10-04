@@ -1,6 +1,12 @@
-public class Mammals extends Animals {
+public class Mammal extends Animal {
     private String living;
     private int speed;
+
+    public Mammal(String name, int age, String living, int speed) {
+        super(name, age);
+        this.living = living;
+        this.speed = speed;
+    }
 
     public String getSreda() {
         return living;
@@ -22,17 +28,17 @@ public class Mammals extends Animals {
         this.speed = speed;
     }
 
-    @Override
+
     void eat() {
-        super.eat();
+        System.out.println("Кушать");
     }
 
-    @Override
     void sleep() {
-        super.sleep();
+        System.out.println("Спит");
     }
 
     void walk() {
+
         System.out.println("Действие прогулки");
     }
 

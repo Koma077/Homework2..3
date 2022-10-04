@@ -6,6 +6,7 @@ public abstract class Transport {
     private String colour;
     private int maxSpeed;
 
+
     protected abstract void refill();
 
 
@@ -16,7 +17,7 @@ public abstract class Transport {
         this.country = country;
         this.colour = colour;
         this.maxSpeed = maxSpeed;
-    }
+}
 
     public String getBrand() {
         return brand;

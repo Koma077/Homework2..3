@@ -1,36 +1,28 @@
-public class Amphibians extends Animals {
+public class Bird extends Animal {
     private String living;
+
+    public Bird(String name, int age, String living) {
+        super(name, age);
+        this.living = living;
+    }
 
     public String getLiving() {
         return living;
     }
 
     public void setLiving(String living) {
-        if (living == null) {
-            this.living = "Среда не указана";
-        } else {
             this.living = living;
         }
-    }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 
-    @Override
     void eat() {
-        super.eat();
+        System.out.println("Клюет");;
     }
-
-    @Override
-    void sleep() {
-        super.sleep();
+    void sleep(){
+        System.out.println("Спит");
     }
-
-    @Override
     void go() {
-        super.go();
+        System.out.println("Идет");
     }
     void hunt(){
         System.out.println("Действие для добычи пищи");
@@ -38,7 +30,7 @@ public class Amphibians extends Animals {
 
     @Override
     public String toString() {
-        return "Amphibians{" +
+        return "Birds{" +
                 "living='" + living + '\'' +
                 '}' + super.toString();
     }

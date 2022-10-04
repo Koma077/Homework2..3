@@ -1,3 +1,5 @@
+import java.util.SortedMap;
+
 public class Main {
     public static void main(String[] args) {
         Train train = new Train(
@@ -56,21 +58,20 @@ public class Main {
         //bus1.refill();
 
 
-
-        Herbivores gazelle  = new Herbivores();
-        Herbivores giraffe = new Herbivores();
-        Herbivores loshad = new Herbivores();
-        Predators hyena = new Predators();
-        Predators tiger = new Predators();
-        Predators bear = new Predators();
-        Amphibians frog = new Amphibians();
-        Amphibians freshwaterSnake = new Amphibians();
-        Flightless peacock = new Flightless();
-        Flightless penguin = new Flightless();
-        Flightless dodoBird = new Flightless();
-        Flying seagull = new Flying();
-        Flying albatross = new Flying();
-        Flying falcon = new Flying();
+        Herbivore giraffe = new Herbivore("Пятнистый", 6, "Саванны", 55, "Разнообразные листья");
+        Herbivore loshad = new Herbivore("Хвостатый", 5, "Дикая природа", 55, "Травка");
+        Predator hyena = new Predator("Гиен", 2, "Африка", 55, "Падаль");
+        Predator tiger = new Predator("Полосатик", 3, "Тропические леса", 65, "Мясо животных");
+        Predator bear = new Predator("Косолапый", 5, "Лесные массивы", 40, "МЯсо рыбы");
+        Amphibian frog = new Amphibian("Зелень", 1, "Пресноводные водоёмы");
+        Amphibian freshwaterSnake = new Amphibian("Ужик", 1, "Вблизи водоемов");
+        Flightless peacock = new Flightless("Павлинчик", 2, "Леса", "Ходит");
+        Flightless penguin = new Flightless("Пингвинчик", 1,"Арктика", "Ходит");
+        Flightless dodoBird = new Flightless("До-До", 2, "Тропики","Ходит");
+        Flying seagull = new Flying("Чаечка", 3, "Летает");
+        Flying albatross = new Flying("Батрос>", 3, "Летает");
+        Flying falcon = new Flying("Соколик", 3, "Летает");
+        System.out.println(giraffe);
         System.out.println(albatross.equals(peacock));
 
     }

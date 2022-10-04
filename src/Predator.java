@@ -1,5 +1,10 @@
-public class Predators extends Mammals {
+public class Predator extends Mammal {
     private String food;
+
+    public Predator(String name, int age, String living, int speed, String food) {
+        super(name, age, living, speed);
+        this.food = food;
+    }
 
     public String getFood() {
         return food;
@@ -13,24 +18,16 @@ public class Predators extends Mammals {
         }
     }
 
-    @Override
-    public String getSreda() {
-        return super.getSreda();
-    }
-
-    @Override
     void eat() {
-        super.eat();
+        System.out.println("Кушать");
     }
 
-    @Override
     void sleep() {
-        super.sleep();
+        System.out.println("Спит");
     }
 
-    @Override
     void walk() {
-        super.walk();
+        System.out.println("Ходит");
     }
     void hunt(){
         System.out.println("Действие для добычи пищи");

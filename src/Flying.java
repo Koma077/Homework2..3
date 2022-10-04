@@ -1,5 +1,10 @@
-public class Flying extends Birds {
+public class Flying extends Bird {
     private String movement;
+
+    public Flying(String name, int age, String movement) {
+        super(name, age, movement);
+        this.movement = movement;
+    }
 
     public String getMovement() {
         return movement;
@@ -13,24 +18,21 @@ public class Flying extends Birds {
         }
     }
 
-    @Override
+
     void eat() {
-        super.eat();
+        System.out.println("Клюет");
     }
 
-    @Override
     void sleep() {
-        super.sleep();
+        System.out.println("Спит");
     }
 
-    @Override
     void go() {
-        super.go();
+        System.out.println("Летает");
     }
 
-    @Override
     void hunt() {
-        super.hunt();
+        System.out.println("Добывает пищу");
     }
     void walk() {
         System.out.println("Действие прогулки");
