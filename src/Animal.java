@@ -25,15 +25,9 @@ public abstract class Animal {
         this.age = age;
     }
 
-    void eat(){
-        System.out.println("Кушать");
-    }
-    void sleep(){
-        System.out.println("Спать");
-    }
-    void go(){
-        System.out.println("Идти");
-    }
+    abstract void eat();
+    abstract void sleep();
+    abstract void go();
 
     @Override
     public String toString() {
